@@ -5,19 +5,19 @@
 console.log(firstNum,secondNum);
 }*/
 
-    
-$(document).ready(function() {
-    $("#btnCalc").click(function() {
-      // Reading the data from the form
-      var words = parseInt($("#word").val());
-      var letter = parseInt($("#letter").val());
-     
-      var arrNum = arrangeBySize(num1, num2, num3);
   
-      document.getElementById("show").innerHTML = arrNum;
-    });
+$(document).ready(function() {
+  $("#btnCalc").click(function() {
+    // Reading the data from the form
+    var words =($("#word").val());
+    var letter =($("#letter").val());
+
+   function myFunction() {
+    var couner=0;
+  for (var index = 0; index < words.length; index++){ 
+    if (letter = words.substring(index, index+1)) {counter=counter+1}   }
+
+  document.getElementById("show").innerHTML = counter;
+}
 });
-
-// Logic function
-function arrangeBySize(nm1, nm2, nm3) {
-
+});
