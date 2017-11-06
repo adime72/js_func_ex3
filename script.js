@@ -11,13 +11,15 @@ $(document).ready(function() {
     // Reading the data from the form
     var words =($("#word").val());
     var letter =($("#letter").val());
-
-   function myFunction() {
+    var count= fncCounter (words, letters);
+    document.getElementById("show").innerHTML = count;
+  });
+});
+   function fncCounter(words, letters) {
     var couner=0;
   for (var index = 0; index < words.length; index++){ 
     if (letter = words.substring(index, index+1)) {counter=counter+1}   }
 
-  document.getElementById("show").innerHTML = counter;
+
 }
-});
-});
+
