@@ -16,9 +16,9 @@ $(document).ready(function() {
   });
 });
    function fncCounter(words, letters) {
-    var couner=0;
+    var counter=0;
   for (var index = 0; index < words.length; index++){ 
-    if (letter = words.substring(index, index+1)) {counter=counter++}   }
+    if (letters= words.substring(index, index+1)) {counter++}  }
 
 
 }
